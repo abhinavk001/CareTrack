@@ -29,7 +29,7 @@ public class MongoProducer {
     
     @Produces
     public MongoClient createClient(){
-        String connectionString = String.format("mongodb+srv://%s:%s@taskapp.g7tme.mongodb.net/%s?retryWrites=true&w=majority",user,pass,dbName);
+        String connectionString = String.format("mongodb+srv://%s:%s@sweetty.zc1qfm1.mongodb.net/%s?retryWrites=true&w=majority",user,pass,dbName);
         MongoClient mongoClient = MongoClients.create(connectionString);
 
         return mongoClient;
